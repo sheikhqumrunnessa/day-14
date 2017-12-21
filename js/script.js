@@ -116,8 +116,8 @@ $('#password').keyup(function () {
 function checkConfirmPassword(){
     var passwordValue = $('#password').val();
     var passwordValue1 = $('#confirmPassword').val();
-    if (passwordValue=passwordValue1){
-        $('#passwordError').text('');
+    if (passwordValue == passwordValue1){
+        $('#confirmPasswordError').text('');
     return true;
     }else {
         $('#confirmPasswordError').text('Password not matched');
